@@ -2,6 +2,16 @@
 
 :root {
   --background: #ffffff;
+  --pink: #af32ae;
+  --aqua: #1eb0ea;
+  --blue: #171583;
+  --dark-blue: #1d2353;
+  --orange: #d9a08b;
+  --purple: #8638d2;
+  --purple: #8638d2;
+  --purple-white: #eda9e9;
+  --font: 'Geist Sans', -apple-system, BlinkMac;
+  --gradient-background: linear-gradient(to right, var(--dark-blue), var(--blue), var(--pink), var(--aqua));
   --foreground: #171717;
 }
 
@@ -20,7 +30,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--gradient-background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
