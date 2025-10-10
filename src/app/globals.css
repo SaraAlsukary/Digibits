@@ -36,6 +36,10 @@ body {
 } */
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --pink: #af32ae;

@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
     transition: all 0.3s ease;
 }
 
@@ -10,4 +11,25 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     padding: 1rem 5%;
+}
+
+.header nav {
+    transition: all 0.3s ease;
+}
+
+.header .active {
+    display: block;
+}
+
+.header .active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+    top: 0;
+    background-color: var(--dark-blue);
+    left: 0;
+    text-align: center;
 }
