@@ -69,3 +69,7 @@ body {
   color: var(--foreground);
   font-family: var(--font);
 }
+
+.active {
+  color: var(--orange)
+}
