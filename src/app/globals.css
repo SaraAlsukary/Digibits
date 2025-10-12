@@ -36,6 +36,10 @@ body {
 } */
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --pink: #af32ae;
@@ -68,16 +72,10 @@ body {
   background: var(--gradient-background);
   color: var(--foreground);
   font-family: var(--font);
-  animation: gradientShift 10s ease infinite;
-}
- /* body {
-  background: linear-gradient(135deg, #1b0a44, #3a2a7a, #ff6b81);
-  background-size: 200% 200%;
-  animation: gradientShift 10s ease infinite;
-} */
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+}
+
+.active {
+  color: var(--orange)
+
 }
