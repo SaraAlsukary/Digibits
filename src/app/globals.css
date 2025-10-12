@@ -40,16 +40,24 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: font;
+  src: url('../assets/fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+
 :root {
   --background: #ffffff;
   --pink: #af32ae;
   --aqua: #1eb0ea;
   --blue: #171583;
+  --image-color: #dd70ad;
   --dark-blue: #1d2353;
   --orange: #d9a08b;
   --purple: #8638d2;
   --purple-white: #eda9e9;
-  --font: 'Geist Sans', -apple-system, BlinkMac;
+  --font: font;
+  /* --font: 'Geist Sans', -apple-system, BlinkMac; */
   --gradient-background: linear-gradient(to right, var(--dark-blue) 0%, var(--blue) 35%, var(--pink) 100%);
   --foreground: #171717;
 }
@@ -67,6 +75,7 @@ body {
     --foreground: #000;
   }
 }
+
 
 body {
   background: var(--gradient-background);

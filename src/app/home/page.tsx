@@ -10,9 +10,9 @@ const Home = () => {
             <Header />
             <main className='container pt-40 px-10 mx-auto '>
                 <div className=' flex lg:flex-row xl:flex-row md:flex-row  text-white items-center justify-between  max-sm:flex-col-reverse sm:flex-col-reverse '>
-                    <div className="left w-[600px] xl:text-left md:text-left sm:text-center max-sm:text-center max-sm:w-[350px]">
+                    <div className="text left w-[600px] xl:text-left md:text-left sm:text-center max-sm:text-center max-sm:w-[300px]">
                         <h1 className='text-4xl font-bold '>Welcome to Digibits</h1>
-                        <p className='text-2xl '>Your gateway to innovative digital solutions,
+                        <p className='text-2xl sm:text-xl max-sm:text-xl  '>Your gateway to innovative digital solutions,
                             learn more about our services and offerings,
                             Discover how we can help you achieve your digital goals
                         </p>
