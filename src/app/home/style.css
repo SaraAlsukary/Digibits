@@ -11,4 +11,14 @@
         background-image: none;
         background: var(--gradient-background);
     }
+
+    .landing .text  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .landing .text p {
+        width: 400px;
+    }
 }

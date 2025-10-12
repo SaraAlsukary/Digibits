@@ -14,14 +14,12 @@
 }
 
 .header nav {
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
 }
 
-.header .active {
-    display: block;
-}
 
-.header .active ul {
+
+/* .header .active ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -32,4 +30,33 @@
     background-color: var(--dark-blue);
     left: 0;
     text-align: center;
+} */
+
+@media screen and (max-width:767px) {
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        width: 100%;
+        padding: 40px;
+        top: 0;
+        background-color: var(--dark-blue);
+        left: 0;
+        text-align: center;
+    }
+
+    .header nav {
+        opacity: 0;
+        top: -340px;
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header .active {
+        top: 0;
+        opacity: 1;
+    }
 }
